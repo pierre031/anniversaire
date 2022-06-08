@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: inline-block;
+}
+
+header {
+    padding: 5px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    
+    margin: 15px 15px 0 15px;
+    border-radius: 10px;
+
+}
+.entete {
+    margin-bottom: 40px;
+}
+
+figure {grid-area: image;}
+p {grid-area: texte;}
+
+section {
+    margin-left: 15px;
+    text-align: center;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+
+}
+
+.spectacle {
+    border-radius: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+.spectacle:hover {
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+
+div {
+    margin: 10px 0;
+    padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "image texte";
+    align-items: center; 
+    border: 1px solid rgba(160, 35, 35, 0.411);  
+    border-radius: 15px; 
+}
+
+.global {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient( rgb(207, 175, 85), rgb(255, 224, 138));
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: red;
+}
+
+.entete {
+    color: blue;
+}
+
+figcaption {
+    color: navy;
+}
